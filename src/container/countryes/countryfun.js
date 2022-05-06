@@ -8,12 +8,13 @@ function Countryfun(props) {
     const changecountry = () => {
         setcountry('uk')
     }
-
+   
     return (
         <div>
             
             <p>[function base Component :] {country}</p>
-            <button onClick={() => changecountry() }>change</button>
+            <button onClick={() => changecountry() }> change</button>
+           
 
         </div>
     );
