@@ -3,6 +3,7 @@ import Country from './container/countryes/country';
 import City from './container/countryes/city';
 import Countryfun from './container/countryes/countryfun';
 import Cityfun from './container/countryes/cityfun';
+import Countryfunpro from './container/countryes/countryfunpro';
 
 
 
@@ -14,12 +15,9 @@ function App() {
 return (
     <>
     
-      <Country/>
-      <City />
-
-      <Countryfun />
-      < Cityfun />
   
+
+      <Countryfunpro gdpval={9.5}/>  
     </>
   );
 }
