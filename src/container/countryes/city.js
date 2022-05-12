@@ -14,13 +14,8 @@ export default class city extends Component {
     changecountry = () => {
         this.setState ({
             city: 'baroda'
-        })
-
-        
+        })   
     }
-
-
-  
 
   render() {
     return (

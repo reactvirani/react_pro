@@ -5,6 +5,8 @@ import Countryfun from './container/countryes/countryfun';
 import Cityfun from './container/countryes/cityfun';
 import Countryfunpro from './container/countryes/countryfunpro';
 import Brances from './container/brannces/Brances';
+import Time from './container/time/time';
+import Timefun from './container/time/Timefun';
 
 
 
@@ -16,9 +18,12 @@ return (
     
   
 
-      <Countryfunpro gdpval={9.5}/>  
+      {/* <Countryfunpro gdpval={9.5}/>  
 
-      <Brances />
+      <Brances /> */}
+
+      {/* <Time /> */}
+      <Timefun />
       
     </>
   );
