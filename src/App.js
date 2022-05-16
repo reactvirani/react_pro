@@ -1,33 +1,63 @@
 import './App.css';
-import Country from './container/countryes/country';
-import City from './container/countryes/city';
-import Countryfun from './container/countryes/countryfun';
-import Cityfun from './container/countryes/cityfun';
-import Countryfunpro from './container/countryes/countryfunpro';
-import Brances from './container/brannces/Brances';
-import Time from './container/time/time';
-import Timefun from './container/time/Timefun';
 
 
+import React, { useEffect, useState } from 'react';
+import home from './container/home/home';
+import Loading from './container/loading/Loading';
 
+let LoadingWitHome = Loading(home);
 
-function App() {
+function App(props) {
+  const [loading,setloading] = useState(false);
+  const[data,setdata] = useState([]);
 
-return (
-    <>
-    
-  
+  let orgdata = [
+    {id:101,name:'ankitbhai'},
+    {id:102,name:'piyusbhai'},
+    {id:103,name:'pragatimem'}
+  ]
 
-      {/* <Countryfunpro gdpval={9.5}/>  
+  useEffect(
+    () => {
+      setloading(true);
+      setTimeout(() => {setloading(false); setdata(orgdata)},2000)
+    },
+    []
+  )
 
-      <Brances /> */}
-
-      {/* <Time /> */}
-      <Timefun />
-      
-    </>
+  console.log(loading, data);
+  return (
+    <div>
+      <>
+        <LoadingWitHome
+        isloading={loading}
+        data={data}
+        />
+      </>
+    </div>
   );
 }
+
 export default App;
+
+// function App() {
+
+
+// return (
+//     <>
+  
+//       {/* <Cityfun/>
+//       {/* <City /> */}
+//       {/* <Countryfunpro gdpval={9.5}/>   */}
+  
+//       {/* <Brances /> */}
+
+//       {/* <Time /> */}
+//       {/* <Timefun /> */} 
+      
+//     </>
+//   );
+// }
+// export default App;
 
 

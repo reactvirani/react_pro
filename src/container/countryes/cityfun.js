@@ -12,7 +12,6 @@ function Cityfun(props) {
 
     return (
         <div>
-            
             <p>[function base Component :] {city}</p>
             <p>[Famous food for this city]{food}</p>
             <button onClick={() => {

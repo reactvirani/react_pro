@@ -8,7 +8,6 @@ export default class city extends Component {
         this.state = {
             city: 'surat'
          };
-        
     }
     
     changecountry = () => {

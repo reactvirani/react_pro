@@ -14,9 +14,7 @@ export default class country extends Component {
     changecountry = () => {
         this.setState ({
             country: 'Canada'
-        })
-
-        
+        }) 
     }
 
 
