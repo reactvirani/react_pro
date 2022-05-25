@@ -22,7 +22,8 @@ function Brances(props) {
 
     return (
         <div>
-            
+        
+        
             <p>[Brances:]{brance}</p>
             <button onClick={() => branchrw1()}>RW1</button>
             <button onClick={() => branchrw2()}>RW2</button>
